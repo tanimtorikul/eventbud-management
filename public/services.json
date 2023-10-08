@@ -1,0 +1,54 @@
+{
+    "services": [
+       {
+          "name": "Photography and Videography Services",
+          "image": "https://i.ibb.co/swGWJjK/photography.jpg",
+          "price": "$1,500 - $5,000",
+          "description": "Capture the moments with professional photography and videography. High-quality media for your event.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Catering and Menu Planning",
+          "image": "catering.jpg",
+          "price": "$2,000 - $10,000",
+          "description": "Customized catering and menu options to delight your guests with delicious food and beverages.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Entertainment Booking",
+          "image": "entertainment.jpg",
+          "price": "$1,000 - $7,000",
+          "description": "Book entertainment options like live bands, DJs, and more to keep your guests entertained.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Decor and Floral Arrangements",
+          "image": "decor.jpg",
+          "price": "$500 - $3,000",
+          "description": "Transform your event space with stunning decor and floral arrangements to match your theme.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Guest Experience Enhancement",
+          "image": "guest-experience.jpg",
+          "price": "$300 - $1,500",
+          "description": "Add interactive activities and unique experiences to make your event memorable for your guests.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Logistics and Transportation",
+          "image": "transportation.jpg",
+          "price": "$500 - $2,500",
+          "description": "Ensure smooth event logistics and transportation for your guests' convenience.",
+          "button": "Learn More"
+       },
+       {
+          "name": "Venue Selection and Coordination",
+          "image": "venue.jpg",
+          "price": "Varies by venue",
+          "description": "Find the perfect venue that suits your event's size and vision, and coordinate all related details.",
+          "button": "Learn More"
+       }
+    ]
+ }
+ 
