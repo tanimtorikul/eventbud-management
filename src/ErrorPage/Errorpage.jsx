@@ -4,7 +4,7 @@ import Navbar from '../Pages/Shared/Navbar/Navbar';
 
 const Errorpage = () => {
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-[1440px] mx-auto'>
       <Navbar></Navbar>
       <section className="relative z-10 bg-primary py-[120px]">
         <div className="container">

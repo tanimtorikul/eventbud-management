@@ -1,19 +1,36 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
     <>
-      <li>
-        <NavLink to='/'>Home</NavLink>
+      <li className="text-lg font-medium">
+        <NavLink
+          to="/"
+          activeClassName="active-link"
+          activeStyle={{ fontWeight: "extrabold" }}
+        >
+          Home
+        </NavLink>
       </li>
-      <li>
-        <NavLink to='/event'>Events</NavLink>
+      <li className="text-lg font-medium">
+        <NavLink
+          to="/events"
+          activeClassName="active-link"
+          activeStyle={{ fontWeight: "bold" }}
+        >
+          Events
+        </NavLink>
       </li>
-      <li>
-        <NavLink to='about'>About</NavLink>
+      <li className="text-lg font-medium">
+        <NavLink
+          to="/about"
+          activeClassName="active-link"
+          activeStyle={{ fontWeight: "bold" }}
+        >
+          About
+        </NavLink>
       </li>
-      
     </>
   );
   return (
@@ -40,18 +57,23 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-         {navLinks}
+            {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">EventBud</a>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          <span className="text-red-400">Event</span>Bud
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-            {navLinks}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <Link
+          to="/login"
+          className="btn bg-blue-500 hover:bg-blue-600 text-white"
+        >
+          Login
+        </Link>
       </div>
     </div>
   );
