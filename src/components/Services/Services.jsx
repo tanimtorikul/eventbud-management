@@ -12,7 +12,7 @@ const Services = ({ service }) => {
           <div className="flex justify-between items-center">
             <p className="text-green-500 text-lg font-semibold">{price}</p>
             <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out">
-              Details
+              View Details
             </button>
           </div>
         </div>

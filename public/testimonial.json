@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "title": "Fantastic Wedding Planner",
+    "testimonial": "We are beyond grateful for the exceptional work your team did in planning our wedding. The day was filled with love, laughter, and beautiful memories. Thank you for making it perfect!",
+    "event_date": "2023-05-15",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "title": "Unforgettable Engagement Party",
+    "testimonial": "Our engagement party was a dream come true, thanks to your creative ideas and meticulous planning. It was a night of joy and celebration that we'll cherish forever.",
+    "event_date": "2023-06-25",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Michael Davis",
+    "title": "Retirement Bliss",
+    "testimonial": "The retirement party you organized for me was a heartfelt farewell to my career. Your team's dedication and attention to detail made it a truly special day.",
+    "event_date": "2023-09-10",
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "name": "Emily White",
+    "title": "Beautiful Baby Shower",
+    "testimonial": "I'm overwhelmed by the love and care you put into planning my baby shower. It was a delightful day filled with adorable decorations and loving friends and family.",
+    "event_date": "2023-07-01",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "David Martinez",
+    "title": "Anniversary Extravaganza",
+    "testimonial": "Celebrating our anniversary with your company's help was a fantastic choice. The romantic setting and thoughtful details made it a night to remember forever.",
+    "event_date": "2023-08-20",
+    "rating": 5
+  }
+]

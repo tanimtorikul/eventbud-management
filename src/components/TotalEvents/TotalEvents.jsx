@@ -1,3 +1,4 @@
+
 import CountUp from "react-countup";
 
 const TotalEvents = () => {
