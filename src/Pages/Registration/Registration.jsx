@@ -1,15 +1,47 @@
-import React from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Registration = () => {
-  const handleRegister = () => {
-    // Handle registration logic here
+  const [successMessage, setSuccessMessage] = useState("");
+  const [registerError, setRegisterError] = useState("");
+  const { createUser } = useContext(AuthContext);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+
+    if (password.length < 6) {
+      setRegisterError("Password should be at least 6 characters or longer");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegisterError("Password should have at least uppercase character");
+      return;
+    } else if (!/[^a-zA-Z0-9]/.test(password)) {
+      setRegisterError("Password should have at least one special character");
+      return;
+    }
+    // console.log(name, email, password);
+    setRegisterError("");
+    setSuccessMessage("");
+
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        setSuccessMessage("User created successfully!");
+      })
+      .catch((error) => {
+        console.log(error);
+        setRegisterError(error.message);
+      });
   };
 
   return (
     <>
-      <div className="hero px-4 md:px-0 my-12">
-        <div className="card w-full md:w-[752px] py-12 shadow-2xl bg-base-100">
+      <div className="hero px-4 md:px-0 my-8">
+        <div className="card w-full md:w-[752px] py-6 shadow-2xl bg-base-100">
           <form
             onSubmit={handleRegister}
             className="card-body w-full md:w-[560px] mx-auto"
@@ -32,7 +64,9 @@ const Registration = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="text-xl font-semibold mb-2">Email address</span>
+                <span className="text-xl font-semibold mb-2">
+                  Email address
+                </span>
               </label>
               <input
                 type="email"
@@ -65,6 +99,16 @@ const Registration = () => {
                 <span className="text-red-400">Login</span>
               </Link>{" "}
             </h2>
+            {registerError && (
+              <p className="text-red-400 text-center font-medium">
+                {registerError}
+              </p>
+            )}
+            {successMessage && (
+              <p className="text-green-500 text-center font-medium">
+                {successMessage}
+              </p>
+            )}
           </form>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="my-12">
+    <div className="mt-24 mb-12">
       <h2 className="text-2xl md:text-5xl text-center font-bold mb-10">
         Read trusted reviews from our customers
       </h2>

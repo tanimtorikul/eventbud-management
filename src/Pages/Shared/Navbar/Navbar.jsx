@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        console.log("user logged in succesfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const navLinks = (
     <>
       <li className="text-lg font-medium">
@@ -70,7 +82,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <Link
           to="/login"
-          className="btn bg-blue-500 hover:bg-blue-600 text-white"
+          className="btn bg-blue-600 hover:bg-blue-500 text-white"
         >
           Login
         </Link>
