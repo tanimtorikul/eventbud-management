@@ -28,11 +28,11 @@ const Navbar = () => {
       </li>
       <li className="text-lg text-white font-medium">
         <NavLink
-          to="/events"
+          to="/shops"
           activeClassName="active-link"
           activeStyle={{ fontWeight: "bold" }}
         >
-          Events
+          Shop
         </NavLink>
       </li>
       <li className="text-lg text-white font-medium">
@@ -77,7 +77,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2  w-52"
+            className="menu  menu-sm dropdown-content mt-3 z-[1] p-2  w-52"
           >
             {navLinks}
           </ul>
@@ -86,7 +86,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="menu menu-horizontal text-white shadow-xl px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         {user?.email ? (

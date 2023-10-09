@@ -1,4 +1,10 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       className="relative h-[500px] md:h-[700px] rounded-xl overflow-hidden"
@@ -11,7 +17,10 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-4xl mx-auto p-6"  data-aos="zoom-in-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Your Premier <br />{" "}
             <span className="text-[#11C0B4]">Event Planning</span> <br /> Partner

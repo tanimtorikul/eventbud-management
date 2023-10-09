@@ -1,0 +1,83 @@
+[
+  {
+    "productId": "1",
+    "title": "Perfect Retirement Gift",
+    "description": "Thoughtful, unique gifts for any occasion.",
+    "price": 1000,
+    "image": "https://i.ibb.co/cQCQm6P/ekaterina-shevchenko-ZLTl-He-Kbh04-unsplash.jpg",
+    "rating": 4.0
+  },
+  {
+    "productId": "2",
+    "title": "Groom's Suit",
+    "description": "Classic black tuxedo for the groom.",
+    "price": 800,
+    "image": "https://i.ibb.co/5Tdyr55/samantha-gades-b-FYoy-Kivbmg-unsplash.jpg",
+    "rating": 3.5
+  },
+  {
+    "productId": "3",
+    "title": "Birthday Ballon Bliss",
+    "description": "Colorful balloons to elevate your birthday with joy",
+    "price": 500,
+    "image": "https://i.ibb.co/Bs8TWcV/gaelle-marcel-vrk-SVp-Owchk-unsplash.jpg",
+    "rating": 5.0
+  },
+  {
+    "productId": "4",
+    "title": "Wedding Rings",
+    "description": "Exquisite wedding rings in white gold.",
+    "price": 300,
+    "image": "https://i.ibb.co/CQfvRYt/jewellery.jpg",
+    "rating": 5.0
+  },
+  {
+    "productId": "5",
+    "title": "Attractive Watch",
+    "description": "Timeless Elegance for Your Wedding special day.",
+    "price": 1500,
+    "image": "https://i.ibb.co/xYsTms4/watch.jpg",
+    "rating": 4.0
+  },
+  {
+    "productId": "6",
+    "title": "Charm Bracelet",
+    "description": "Spacious and elegant venue for your wedding celebration.",
+    "price": 2000,
+    "image": "https://i.ibb.co/RDdQMZN/bracelet.jpg",
+    "rating": 4.0
+  },
+  {
+    "productId": "7",
+    "title": "Catering",
+    "description": "Delicious catering service with a variety of menu options.",
+    "price": 2500,
+    "image": "https://i.ibb.co/Z6GFT3S/ring2.jpg",
+    "rating": 5.0
+  },
+  {
+    "productId": "8",
+    "title": "DJ Services",
+    "description": "Professional DJ to keep the party going with great music.",
+    "price": 800,
+    "image": "https://i.ibb.co/j6GQKp8/ring.jpg",
+    "rating": 4.0
+  },
+  {
+    "productId": "9",
+    "title": "Birthday Cake",
+    "description": "Customized birthday cake with your choice of flavors.",
+    "price": 50,
+    "image": "https://i.ibb.co/QjmJxCV/cake.jpg",
+ 
+    "rating": 4.0
+  },
+  {
+    "productId": "10",
+    "title": "Floral Arrangements",
+    "description": "Colorful decorations to set the party mood.",
+    "price": 30,
+    "image": "https://i.ibb.co/XV0jSpx/ebi-zandi-x-Cxp-OUe-Xh-0-unsplash.jpg",
+    "rating": 5.0
+  }
+]
