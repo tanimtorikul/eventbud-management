@@ -20,8 +20,12 @@ const Navbar = () => {
       <li className="text-lg text-white font-medium">
         <NavLink
           to="/"
-          activeClassName="active-link"
-          activeStyle={{ fontWeight: "extrabold" }}
+          style={({ isActive, isPending }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isPending ? "red" : "black",
+            };
+          }}
         >
           Home
         </NavLink>
@@ -29,8 +33,12 @@ const Navbar = () => {
       <li className="text-lg text-white font-medium">
         <NavLink
           to="/shops"
-          activeClassName="active-link"
-          activeStyle={{ fontWeight: "bold" }}
+          style={({ isActive, isPending }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isPending ? "red" : "black",
+            };
+          }}
         >
           Shop
         </NavLink>
@@ -38,8 +46,12 @@ const Navbar = () => {
       <li className="text-lg text-white font-medium">
         <NavLink
           to="/gallery"
-          activeClassName="active-link"
-          activeStyle={{ fontWeight: "bold"  }}
+          style={({ isActive, isPending }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isPending ? "red" : "black",
+            };
+          }}
         >
           Gallery
         </NavLink>
@@ -47,8 +59,12 @@ const Navbar = () => {
       <li className="text-lg text-white font-medium">
         <NavLink
           to="/about"
-          activeClassName="active-link"
-          activeStyle={{ fontWeight: "bold"  }}
+          style={({ isActive, isPending }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isPending ? "red" : "black",
+            };
+          }}
         >
           About
         </NavLink>
@@ -56,7 +72,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-[#1f1f1f] rounded-xl shadow-xl mt-4 mb-14">
+    <div className="navbar rounded-xl shadow-xl mt-4 mb-14">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -82,11 +98,15 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl text-[#11C0B4]">EventBud
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-xl text-[#11C0B4]"
+        >
+          EventBud
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal text-white shadow-xl px-1">{navLinks}</ul>
+        <ul className="menu menu-horizontal text-white px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         {user?.email ? (

@@ -2,8 +2,8 @@ import React from "react";
 import Banner from "./Banner";
 import Services from "../../components/Services/Services";
 import { useLoaderData } from "react-router-dom";
-import Events from "../../components/Events/Testimonial";
 import TotalEvents from "../../components/TotalEvents/TotalEvents";
+import Testimonial from "../../components/Events/Testimonial";
 
 const Home = () => {
   const services = useLoaderData();
@@ -19,12 +19,8 @@ const Home = () => {
         <Services service={service}></Services>
       ))}
       </div>
-      <h2 className='mt-24 text-5xl text-center font-bold mb-4'>Our Upcoming Events
-</h2>
-      <p className="text-center text-lg mb-12">We make your events smart & impactful by personalised event management services
-</p>
       <div>
-        <Events></Events>
+        <Testimonial></Testimonial>
       </div>
       <div>
         <TotalEvents></TotalEvents>
