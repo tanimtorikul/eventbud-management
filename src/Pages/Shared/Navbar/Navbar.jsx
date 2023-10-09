@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   const navLinks = (
     <>
-      <li className="text-lg font-medium">
+      <li className="text-lg text-white font-medium">
         <NavLink
           to="/"
           activeClassName="active-link"
@@ -26,7 +26,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg text-white font-medium">
         <NavLink
           to="/events"
           activeClassName="active-link"
@@ -35,11 +35,20 @@ const Navbar = () => {
           Events
         </NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg text-white font-medium">
+        <NavLink
+          to="/gallery"
+          activeClassName="active-link"
+          activeStyle={{ fontWeight: "bold"  }}
+        >
+          Gallery
+        </NavLink>
+      </li>
+      <li className="text-lg text-white font-medium">
         <NavLink
           to="/about"
           activeClassName="active-link"
-          activeStyle={{ fontWeight: "bold" }}
+          activeStyle={{ fontWeight: "bold"  }}
         >
           About
         </NavLink>
@@ -47,7 +56,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-300 rounded-xl shadow-xl mt-4 mb-14">
+    <div className="navbar bg-[#1f1f1f] rounded-xl shadow-xl mt-4 mb-14">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -68,13 +77,12 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2  w-52"
           >
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <span className="text-red-400">Event</span>Bud
+        <Link to="/" className="btn btn-ghost normal-case text-xl text-[#11C0B4]">EventBud
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -103,7 +111,7 @@ const Navbar = () => {
         ) : (
           <Link
             to="/login"
-            className="btn bg-blue-600 hover:bg-blue-500 text-white"
+            className="btn bg-[#11C0B4] outline-none border-none text-white"
           >
             Login
           </Link>

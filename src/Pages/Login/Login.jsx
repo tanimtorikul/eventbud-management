@@ -76,14 +76,14 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn bg-blue-500 hover:bg-blue-600 text-white">
+              <button className="btn bg-[#11C0B4] hover:bg-green-600 text-white">
                 Login
               </button>
             </div>
             <h2 className="text-center text-lg font-medium">
               Don't Have An Account?{" "}
               <Link to="/register">
-                <span className="text-red-400">Register</span>
+                <span className="text-red-600">Register</span>
               </Link>{" "}
             </h2>
             {loginError && (

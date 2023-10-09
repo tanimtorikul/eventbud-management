@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "John and Emily's Elegant Garden Wedding",
+        "image": "https://i.ibb.co/BTVcZQW/douglas-j-s-moreira-UFd-Lg0-BX5a-M-unsplash.jpg",
+        "date": "2023-05-15",
+        "location": "Garden Venue, New York",
+        "description": "A beautiful outdoor wedding ceremony in a lush garden setting."
+    },
+    {
+        "id": 2,
+        "title": "Alex and Sarah's Rustic Barn Wedding",
+        "image": "https://i.ibb.co/Khj6V6Q/al-elmes-ULHx-Wq8reao-unsplash.jpg",
+        "date": "2023-07-22",
+        "location": "Rustic Barn, Vermont",
+        "description": "A charming rustic wedding in a picturesque barn."
+    },
+    {
+        "id": 3,
+        "title": "David and Lisa's Beachfront Wedding Celebration",
+        "image": "https://i.ibb.co/1T1KNbr/aboodi-vesakaran-ox-P3bl3x-QPI-unsplash.jpg",
+        "date": "2023-09-08",
+        "location": "Beachfront Resort, California",
+        "description": "A beachfront wedding with a stunning sunset backdrop."
+    },
+    {
+        "id": 4,
+        "title": "Michael and Jessica's Vintage-inspired Wedding",
+        "image": "https://i.ibb.co/TMM9dzP/luwadlin-bosman-P-HRPYp-FTNA-unsplash.jpg",
+        "date": "2023-06-12",
+        "location": "Vintage Mansion, Louisiana",
+        "description": "A vintage-themed wedding in a historic mansion."
+    },
+    {
+        "id": 5,
+        "title": "William and Olivia's Cityscape Wedding Affair",
+        "image": "https://i.ibb.co/Z2VVyRZ/dmitry-schemelev-OEn-KKXvdb-DU-unsplash.jpg",
+        "date": "2023-08-30",
+        "location": "City Rooftop, Chicago",
+        "description": "A cityscape wedding with breathtaking views of the skyline."
+    },
+    {
+        "id": 6,
+        "title": "Daniel and Sophia's Romantic Countryside Nuptials",
+        "image": "https://i.ibb.co/BrzMk38/shardayyy-photography-f-Jzm-Pe-a0e-U-unsplash.jpg",
+        "date": "2023-04-17",
+        "location": "Countryside Farm, Montana",
+        "description": "A romantic countryside wedding in a serene farm setting."
+    },
+    {
+        "id": 7,
+        "title": "Amanda's Sweet Baby Shower Celebration",
+        "image": "https://i.ibb.co/4sYQ3ZB/vadim-paripa-Pu-Xt-B1-B4z-L8-unsplash.jpg",
+        "date": "2023-02-05",
+        "location": "Home, Los Angeles",
+        "description": "A sweet baby shower celebration with friends and family."
+    },
+    {
+        "id": 8,
+        "title": "Mark's Joyful First Birthday Party",
+        "image": "https://i.ibb.co/PQ8RvVF/olivia-bauso-30-UOq-DM5-QW0-unsplash.jpg",
+        "date": "2023-01-10",
+        "location": "Party Venue, Miami",
+        "description": "A joyful first birthday party filled with laughter and fun."
+    },
+    {
+        "id": 9,
+        "title": "Sophie's Milestone 30th Birthday Bash",
+        "image": "https://i.ibb.co/drBZ191/foto-pettine-Ifj-Ha-Io-Aoq-E-unsplash.jpg",
+        "date": "2023-03-20",
+        "location": "Club, Las Vegas",
+        "description": "A milestone 30th birthday bash with dancing and celebrations."
+    },
+    {
+        "id": 10,
+        "title": "Robert's Fun and Festive 40th Birthday",
+        "image": "https://i.ibb.co/rbgMdbR/charanjeet-dhiman-9x-Ob-RZd-EN7g-unsplash.jpg",
+        "date": "2023-07-05",
+        "location": "Outdoor Park, Austin",
+        "description": "A fun and festive 40th birthday party in the park."
+    },
+    {
+        "id": 11,
+        "title": "Celebration Image",
+        "image": "https://i.ibb.co/1Q4FDJG/chris-lawton-v-BA-JNHAra-I-unsplash.jpg",
+        "date": "2023-12-31",
+        "location": "New Year's Eve Party, Times Square",
+        "description": "A New Year's Eve celebration in the heart of Times Square."
+    }
+]

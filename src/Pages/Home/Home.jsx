@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import Services from "../../components/Services/Services";
 import { useLoaderData } from "react-router-dom";
-import Events from "../../components/Events/Events";
+import Events from "../../components/Events/Testimonial";
 import TotalEvents from "../../components/TotalEvents/TotalEvents";
 
 const Home = () => {

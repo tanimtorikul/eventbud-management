@@ -7,6 +7,8 @@ import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import ServicesDetails from "../components/Services/ServicesDetails";
 import PrivateRoute from "./PrivateRoute";
+import Events from "../components/Events/Events";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,15 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Registration></Registration>,
+      },
+      {
+        path: "/events",
+        element: <Events></Events>,
+      },
+      {
+        path: "/gallery",
+        element: <PrivateRoute><Gallery></Gallery></PrivateRoute>,
+
       },
     ],
   },
