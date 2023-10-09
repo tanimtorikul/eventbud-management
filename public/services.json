@@ -1,80 +1,80 @@
 [
-   {
-      "id": 1,
-      "name": "Photography and Videography",
-      "image": "https://i.ibb.co/swGWJjK/photography.jpg",
-      "price": "$1,500 - $5,000",
-      "description": "Capture the moments with professional photography and videography. High-quality media for your event.",
-      "features": [
-         "Professional photographers and videographers",
-         "High-resolution photos and videos",
-         "Editing and post-production services",
-         "Customized packages available"
-      ]
-   },
-   {
-      "id": 2,
-      "name": "Catering and Menu Planning",
-      "image": "https://i.ibb.co/ZcDphmw/charanjeet-dhiman-9x-Ob-RZd-EN7g-unsplash.jpg",
-      "price": "$2,000 - $10,000",
-      "description": "Customized catering and menu options to delight your guests with delicious food and beverages.",
-      "features": [
-         "Experienced chefs and culinary team",
-         "Tailored menu planning",
-         "Buffet and plated meal options",
-         "Beverage and bar services"
-      ]
-   },
-   {
-      "id": 3,
-      "name": "Entertainment Booking",
-      "image": "https://i.ibb.co/jg6rMPS/music.jpg",
-      "price": "$1,000 - $7,000",
-      "description": "Book entertainment options like live bands, DJs, and more to keep your guests entertained.",
-      "features": [
-         "Live bands, DJs, and performers",
-         "Customized playlists and song requests",
-         "Interactive entertainment options",
-         "Sound and lighting equipment"
-      ]
-   },
-   {
-      "id": 4,
-      "name": "Decor and Floral Arrangements",
-      "image": "https://i.ibb.co/7JKzh8X/flower.jpg",
-      "price": "$500 - $3,000",
-      "description": "Transform your event space with stunning decor and floral arrangements to match your theme. Our experienced team will work with you to create a visually captivating atmosphere that will leave a lasting impression on your guests.",
-      "features": [
-         "Theme-based decor and floral designs",
-         "Table centerpieces and stage decorations",
-         "Event layout and design planning",
-         "Floral delivery and setup"
-      ]
-   },
-   {
-      "id": 5,
-      "name": "Guest Experience Enhancement",
-      "image": "https://i.ibb.co/Mf71Fx5/guest.jpg",
-      "price": "$300 - $1,500",
-      "description": "Add interactive activities and unique experiences to make your event memorable for your guests. From photo booths to games and workshops, we have a wide range of options to choose from to enhance your guests' experience.",
-      "features": [
-         "Photo booths and props",
-         "Interactive games and activities",
-         "Workshops and creative stations",
-         "Personalized guest experiences"
-      ]
-   },
-   {
-      "id": 6,
-      "name": "Logistics and Transportation",
-      "image": "https://i.ibb.co/2gkmS9f/transport.jpg",
-      "price": "$500 - $2,500",
-      "description": "Ensure smooth event logistics and transportation for your guests' convenience. We provide efficient transportation solutions and coordinate all logistics to ensure that your event runs seamlessly, allowing your guests to focus on enjoying the occasion.",
-      "features": [
-         "Transportation coordination",
-         "Guest arrival and departure services",
-         "Parking and valet services",
-         "Event timeline management"
-      ]
-   }
+  {
+    "id": 1,
+    "name": "Photography and Videography",
+    "image": "https://i.ibb.co/swGWJjK/photography.jpg",
+    "price": "$1,500 - $5,000",
+    "description": "Capture the moments with professional photography and videography. High-quality media for your event.",
+    "features": [
+      "Professional photographers and videographers",
+      "High-resolution photos and videos",
+      "Editing and post-production services",
+      "Customized packages available"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Catering and Menu Planning",
+    "image": "https://i.ibb.co/ZcDphmw/charanjeet-dhiman-9x-Ob-RZd-EN7g-unsplash.jpg",
+    "price": "$2,000 - $10,000",
+    "description": "Customized catering and menu options to delight your guests with delicious food and beverages.",
+    "features": [
+      "Experienced chefs and culinary team",
+      "Tailored menu planning",
+      "Buffet and plated meal options",
+      "Beverage and bar services"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Entertainment Booking",
+    "image": "https://i.ibb.co/jg6rMPS/music.jpg",
+    "price": "$1,000 - $7,000",
+    "description": "Book entertainment options like live bands, DJs, and more to keep your guests entertained.",
+    "features": [
+      "Live bands, DJs, and performers",
+      "Customized playlists and song requests",
+      "Interactive entertainment options",
+      "Sound and lighting equipment"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Decor and Floral Arrangements",
+    "image": "https://i.ibb.co/7JKzh8X/flower.jpg",
+    "price": "$500 - $3,000",
+    "description": "Transform your event space with stunning decor and floral arrangements to match your theme. Our experienced team will work with you to create a visually captivating atmosphere that will leave impression on your guests.",
+    "features": [
+      "Theme-based decor and floral designs",
+      "Table centerpieces and stage decorations",
+      "Event layout and design planning",
+      "Floral delivery and setup"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Guest Experience Enhancement",
+    "image": "https://i.ibb.co/Mf71Fx5/guest.jpg",
+    "price": "$300 - $1,500",
+    "description": "Add interactive activities and unique experiences to make your event memorable for your guests. From photo booths to games and workshops, we have a wide range of options to choose from to enhance your guests' experience.",
+    "features": [
+      "Photo booths and props",
+      "Interactive games and activities",
+      "Workshops and creative stations",
+      "Personalized guest experiences"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Logistics and Transportation",
+    "image": "https://i.ibb.co/2gkmS9f/transport.jpg",
+    "price": "$500 - $2,500",
+    "description": "Ensure smooth transportation for your guests. We provide efficient transportation solutions and coordinate all to ensure that your event runs seamlessly, allowing guests to focus on enjoying the occasion.",
+    "features": [
+      "Transportation coordination",
+      "Guest arrival and departure services",
+      "Parking and valet services",
+      "Event timeline management"
+    ]
+  }
 ]
