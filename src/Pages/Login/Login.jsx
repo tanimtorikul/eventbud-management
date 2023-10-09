@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 
@@ -7,6 +7,7 @@ const Login = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [loginError, setLoginError] = useState("");
   const { signIn } = useContext(AuthContext);
+  const location = useLocation();
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
@@ -21,7 +22,7 @@ const Login = () => {
       .then((result) => {
         // console.log(result.user);
         setSuccessMessage("Logged in successfully");
-        navigate('/');
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         // console.log(error);
@@ -84,18 +85,17 @@ const Login = () => {
               <Link to="/register">
                 <span className="text-red-400">Register</span>
               </Link>{" "}
-              
             </h2>
             {loginError && (
               <p className="text-red-500 font-medium text-center">
                 {loginError}
               </p>
             )}
-            {
-              successMessage && (
-                <p className="text-green-500 font-bold text-center">{successMessage}</p>
-              )
-            }
+            {successMessage && (
+              <p className="text-green-500 font-bold text-center">
+                {successMessage}
+              </p>
+            )}
           </form>
           <SocialLogin></SocialLogin>
         </div>
