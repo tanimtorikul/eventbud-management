@@ -1,17 +1,36 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import { Link, useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Shops = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
   console.log(products);
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  const handleAddToCart = () => {
+    toast.success("Added to cart succesfully");
+    navigate("/");
+  };
 
   return (
     <div>
-      <div className="grid  md:grid-cols-3 gap-10">
+      <div
+        className="grid  md:grid-cols-3 gap-10"
+        data-aos="flip-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000"
+      >
         {products.map((product) => (
           <div key={product.id}>
             <div className="w-full max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
@@ -27,13 +46,11 @@ const Shops = () => {
                   <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                     {product.title}
                   </h5>
-                  
                 </a>
                 <a href="#">
                   <h2 className=" font-medium tracking-tight text-red-700 dark:text-white">
                     {product.description}
                   </h2>
-                  
                 </a>
                 <div className="flex items-center mt-2.5 mb-5">
                   <svg
@@ -89,12 +106,13 @@ const Shops = () => {
                   <span className="text-3xl font-bold text-gray-900 dark:text-white">
                     ${product.price}
                   </span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
+                    onClick={handleAddToCart}
                     className="text-white bg-[#11C0B4] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Add to cart
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
