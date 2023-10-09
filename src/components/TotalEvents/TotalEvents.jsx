@@ -1,9 +1,15 @@
 
 import CountUp from "react-countup";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 const TotalEvents = () => {
+  useEffect(()=> {
+    AOS.init();
+  }, [])
   return (
-    <div className="px-4 md:px-0">
+    <div className="px-4 md:px-0" data-aos="fade=left">
       <div className="flex flex-wrap bg-red-400 min-h-[300px] justify-center items-center rounded-lg text-white text-center">
         <div className="w-1/2 md:w-1/4 px-4 mb-4">
           <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">

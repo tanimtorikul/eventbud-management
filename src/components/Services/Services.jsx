@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
 
 const Services = ({ service }) => {
+  useEffect(()=> {
+    AOS.init();
+  }, [])
   const { name, image, price, description, id } = service;
   return (
-    <div className="mb-10 p-4 md:p-0">
+    <div className="mb-10 p-4 md:p-0 " data-aos="flip-left">
       <div className="rounded-lg overflow-hidden shadow-lg">
         <img src={image} alt={name} className="w-full h-56 object-cover" />
         <div className="px-6 py-4">
