@@ -1,18 +1,20 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import toast from "react-hot-toast";
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
 
 const Registration = () => {
-  const [successMessage, setSuccessMessage] = useState("");
   const [registerError, setRegisterError] = useState("");
   const { createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
     const email = form.get("email");
     const password = form.get("password");
-
+    // console.log(name, email, password);
     if (password.length < 6) {
       setRegisterError("Password should be at least 6 characters or longer");
       return;
@@ -23,17 +25,17 @@ const Registration = () => {
       setRegisterError("Password should have at least one special character");
       return;
     }
-    // console.log(name, email, password);
+
     setRegisterError("");
-    setSuccessMessage("");
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        setSuccessMessage("User created successfully!");
+        // console.log(result.user);
+        toast.success("User created successfully!");
+        navigate('/')
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         setRegisterError(error.message);
       });
   };
@@ -98,15 +100,11 @@ const Registration = () => {
               <Link to="/login">
                 <span className="text-red-400">Login</span>
               </Link>{" "}
+              <SocialLogin></SocialLogin>
             </h2>
             {registerError && (
               <p className="text-red-400 text-center font-medium">
                 {registerError}
-              </p>
-            )}
-            {successMessage && (
-              <p className="text-green-500 text-center font-medium">
-                {successMessage}
               </p>
             )}
           </form>

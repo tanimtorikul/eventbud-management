@@ -1,29 +1,37 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
 
 const Login = () => {
-  const {signIn} = useContext(AuthContext);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [loginError, setLoginError] = useState("");
+  const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
 
-     signIn (email, password)
-     .then(result => {
-      console.log(result.user);
-     })
-     .catch(error => {
-      console.log(error);
-     })
+    setLoginError("");
+    setSuccessMessage("");
 
-
+    signIn(email, password)
+      .then((result) => {
+        // console.log(result.user);
+        setSuccessMessage("Logged in successfully");
+        navigate('/');
+      })
+      .catch((error) => {
+        // console.log(error);
+        setLoginError("Invalid email or password. Please try again.");
+      });
   };
   return (
     <>
       <div className="hero px-4 md:px-0 my-8">
-        <div className="card w-full md:w-[752px] py-6 shadow-2xl bg-base-100">
+        <div className="card w-full md:w-[752px]  py-6 shadow-2xl bg-base-100">
           <form
             onSubmit={handleLogin}
             className="card-body w-full md:w-[560px] mx-auto"
@@ -76,8 +84,20 @@ const Login = () => {
               <Link to="/register">
                 <span className="text-red-400">Register</span>
               </Link>{" "}
+              
             </h2>
+            {loginError && (
+              <p className="text-red-500 font-medium text-center">
+                {loginError}
+              </p>
+            )}
+            {
+              successMessage && (
+                <p className="text-green-500 font-bold text-center">{successMessage}</p>
+              )
+            }
           </form>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </>
